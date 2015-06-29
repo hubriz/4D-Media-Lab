@@ -6,15 +6,46 @@ background:url(../images/background/bg-subheader.jpg) top left fixed;
 background-size:cover;
 }
 
+#section-3D {
+    background: url(../images/background/3D_001.jpg) top left fixed;
+    background-size: cover;
+}
+
+#section-360VR,
+#section-post-productions{
+    background:#f8f8f8;
+    height: 100%;
+}
+
+#section-360VR .image-container {
+    background:url(../images/background/360VR-STUDIO-001.jpg);
+}
+
+#section-web3D {
+    background: #inherit;
+    height: 100%;
+}
+
+#section-web3D .image-container {
+    background: url(../images/background/WEB-3D-001.jpg);    
+    right:0;
+}
+
+#section-post-productions .image-container{
+    background: url(../images/background/POSTPROD-001.jpg);
+}
+
 #fun-facts{
 background:url(../images/background/bg-3.jpg) top left fixed;
 background-size:cover;
 }
 
+/*
 #section-contact{ 
 background:url(../images/background/bg-4.jpg) top left fixed;
 background-size:cover;
 }
+*/
 
 #section-skill-bar{ 
 background:url(../images/background/bg-8.jpg) top left fixed;
@@ -25,6 +56,7 @@ background-size:cover;
 #logo-full{ background:#000; padding:60px 0 60px 0;}
 #view-all-projects{background:#F06807; padding:60px 0 60px 0;}
 #section-about-us-2{background:#f8f8f8; height:100%;}
+
 #section-about-us-2 .image-container{background:url(../images/background/bg-side-1.jpg);}
 
 
@@ -35,6 +67,3 @@ background-size:cover;
 .dark #section-portfolio{background:#222;}
 
 #section-testimonial{ background:url(../images/background/bg-2.jpg) top fixed;}
-
-
-#section-web3D {background: url(http://lorempixel.com/1920/1281/nature/)}

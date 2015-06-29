@@ -1,5 +1,3 @@
-// © Copyright 2014 - Cubic by Designesia 
-
 jQuery(document).ready(function() {
 // --------------------------------------------------
 // paralax background
