@@ -2965,7 +2965,11 @@ p.intro {
     
     #section-3D .header-title {
         margin-top: 0;
-    }    
+    }
+    .inner-padding h2 {
+        text-align: center;
+        display: block;
+    }
 }
 
 /* ================================================== */
