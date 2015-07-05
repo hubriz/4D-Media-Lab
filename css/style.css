@@ -2951,6 +2951,21 @@ p.intro {
     margin-top: 15%;
 }
 
+#above-the-fold .de-video-container .de-video-overlay,
+#section-vr-and-ar .de-video-container .de-video-overlay,
+#section-post-productions .de-video-container .de-video-overlay{
+    background: rgba(0,0,0,.4);    
+}    
+
+
+.demo-reel .blog-slide{
+    overflow: hidden;
+    max-height: 100%;
+}
+
+
+
+
 @media(max-width:979px){
     .header-title, .header-title h2{
         text-align: center !important;
