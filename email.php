@@ -1,6 +1,6 @@
 <?php
-$subject = $_REQUEST['subject'] . ' Ajax HTML Contact Form : Demo'; // Subject of your email
-$to = '3dcglab@gmail.com';  //Recipient's E-mail
+$subject = $_REQUEST['subject'] . ' Inquiry from 4D Media Lab Website'; // Subject of your email
+$to = 'contact@4d-medialab.com';  //Recipient's E-mail
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= "From: " . $_REQUEST['email'] . "\r\n"; // Sender's E-mail

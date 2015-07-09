@@ -244,13 +244,14 @@ jQuery(document).ready(function() {
 		}		
 		
 		
-		if (mx.matches) {
+		/*if (mx.matches) {
 			if(mb==1){
 				jQuery('#mainmenu').show();
-				}else if(mb==0){
+				}
+            else if(mb==0){
 				jQuery('#mainmenu').hide();	
 			}
-		}
+		}*/
 	};	
 	
 
