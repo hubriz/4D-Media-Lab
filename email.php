@@ -1,5 +1,5 @@
 <?php
-$subject = $_REQUEST['subject'] . ' Inquiry from 4D Media Lab Website'; // Subject of your email
+$subject = $_REQUEST['subject'] . ' Inquiry from 4D MediaLab Website'; // Subject of your email
 $to = 'contact@4d-medialab.com';  //Recipient's E-mail
 
 $headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -12,11 +12,11 @@ $message .= $_REQUEST['message'];
 if (@mail($to, $subject, $message, $headers))
 {
 	// Transfer the value 'sent' to ajax function for showing success message.
-	echo 'sent';
+	echo 'Success! Message Sent.';
 }
 else
 {
 	// Transfer the value 'failed' to ajax function for showing error message.
-	echo 'failed';
+	echo 'Message sending failed. Please try again.';
 }
 ?>

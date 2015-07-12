@@ -31,6 +31,17 @@ background-size:cover;
     right:0;
 }
 
+
+#section-about {
+    background: #inherit;
+    height: 100%;
+}
+
+#section-about .image-container {
+    background: url(../images/background/AR-VR-001.jpg);    
+    right:0;
+}
+
 #section-contact .image-container{
     background: url(../images/background/officeImage.jpg);
 }

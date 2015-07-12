@@ -91,7 +91,7 @@ body {
 /* ================================================== */
 header {
   width: 100%;
-  height: 130px;
+  height: auto;/*130px;*/
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -152,9 +152,22 @@ header.smaller #mainmenu a {
 
 header.smaller {
   height: 70px;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   border-bottom: solid 1px #ddd;
 }
+header:hover {
+    background: transparent
+}
+
+header.smaller.clone:hover {
+    background: rgba(255,255,255,1);
+}
+
+header h1#logo a img {
+    max-width: 168px;
+    height: auto;
+}
+
 
 .logo-smaller h1#logo {
   width: 150px;
@@ -165,9 +178,11 @@ header.smaller {
 
 .logo-smaller h1#logo img {
   width: auto;
-  height: 30px;
+    max-width: 168px !important;
+  height: 38px;/*30px;*/
   line-height: 75px;
   font-size: 30px;
+    margin-top: 16px;
 }
 
 .logo-smaller  h1#logo .logo-1 {
@@ -2731,6 +2746,7 @@ footer .widget_recent_post li a {
 /* ================================================== */
 .no-bottom {
   margin-bottom: 0;
+  margin-top: 0 !important;
   padding-bottom: 0;
 }
 
@@ -2922,6 +2938,7 @@ p.intro {
     text-align: right;
     display: block;
     font-size: 5em;
+    text-shadow: 0px 4px 2px rgba(0,0,0,.6);
 }
 
 .header-title p  {
@@ -2929,6 +2946,7 @@ p.intro {
     font-size: 2em;
     line-height: 1.4em;
     margin-top: 24px;
+    text-shadow: 0px 3px 2px rgba(0,0,0,.6);
 }
 
 .header-title p.intro {
@@ -2938,12 +2956,12 @@ p.intro {
 
 .header-title-centered h2{
   font-size: 5em;
-  text-transform: uppercase
+    text-shadow: 0px 4px 2px rgba(0,0,0,.6);
 }
 
 .header-title-centered p {
-  text-transform: uppercase;
-  font-size: 2.6em
+  font-size: 2.6em;
+    text-shadow: 0px 3px 2px rgba(0,0,0,.6);
 }
 
 
@@ -2963,7 +2981,13 @@ p.intro {
     max-height: 100%;
 }
 
-
+.no-resize {
+    resize: none;
+    height: auto;
+}
+.text-block {
+    display: inline-block;
+}
 
 @media(max-width:979px){
     .header-title, .header-title h2{
@@ -3120,15 +3144,22 @@ p.intro {
     position: relative;
     float: right;
     top: 30px;
+      z-index: 10000;
   }
 
   header {
     display: none;
   }
+    header:hover {
+        background: rgba(0,0,0,1);
+    }    
 
   header.header-bg {
     background: rgba(0,0,0,1);
   }
+    header.header-bg:hover {
+        background: rgba(0,0,0,1);
+    }
 
   header,header.fixed {
     display: block;
@@ -3215,7 +3246,7 @@ p.intro {
   }
 
   #mainmenu a {
-    text-align: left;
+    text-align: center;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
   }
@@ -3320,6 +3351,10 @@ p.intro {
   .bloglist {
     margin-bottom: 60px !important;
   }
+    
+    .text-block {
+        display:block;
+    }    
 }
 
 

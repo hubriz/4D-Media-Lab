@@ -1,3 +1,5 @@
+// © Copyright 2014 - Cubic by Designesia 
+
 jQuery(document).ready(function() {
 // --------------------------------------------------
 // paralax background
@@ -247,9 +249,8 @@ jQuery(document).ready(function() {
 		if (mx.matches) {
 			if(mb==1){
 				jQuery('#mainmenu').show();
-				}
-            else if(mb==0){
-				jQuery('#mainmenu').show();	
+				}else if(mb==0){
+				jQuery('#mainmenu').hide();	
 			}
 		}
 	};	
@@ -371,29 +372,6 @@ jQuery(document).ready(function() {
 
 	
 	
-// ----------------
-//  Showcase Entry
-// ----------------
-
-
-    // page login
-
-    var loginPWD = jQuery("[name='inputEmail']").val();
-    var loginPass = jQuery("[name='inputPassword']").val();
-    var submitThis = jQuery("[name='btn-showcase']");
-    
-    submitThis.on('click', function(){
-        if ( loginPass !== "l3tm3!n") {
-            document.location.href = 'showcase.html#section-about';
-            jQuery('.display-name span').append(loginPWD.text());
-        } else {
-            document.location.href = 'index.html'
-        }
-    });
-    
-    
-    
-
 
 	
 	
@@ -766,13 +744,7 @@ jQuery(document).ready(function() {
 				
 			}
 		});
-        
-     
 	
 	});
-
-
-
-
 
 
