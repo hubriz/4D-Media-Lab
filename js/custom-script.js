@@ -16,7 +16,10 @@ jQuery(document).ready(function() {
 	document.createElement("article");
 	document.createElement("section");
 	
-	jQuery('body').stellar();
+	jQuery('body').stellar({
+        //responsive: true,
+       // scrollProperty: 'margin'
+    });
 	
 // --------------------------------------------------
 // looping background
@@ -378,16 +381,20 @@ jQuery(document).ready(function() {
 
     // page login
 
-    var loginPWD = jQuery("[name='inputEmail']").val();
-    var loginPass = jQuery("[name='inputPassword']").val();
+    var loginPWD = jQuery("[name='inputEmail']");
+    var loginPass = jQuery("[name='inputPassword']");
     var submitThis = jQuery("[name='btn-showcase']");
     
     submitThis.on('click', function(){
-        if ( loginPass !== "l3tm3!n") {
-            document.location.href = 'showcase.html#section-about';
-            jQuery('.display-name span').append(loginPWD.text());
+        if ( loginPass.val() !== "4D-MediaLab") {
+        	confirm('Please try again.. Password incorrect.');
+        	return false;
         } else {
-            document.location.href = 'index.html'
+        	setTimeout(function(){
+	        	//alert('Welcome to 4D Media Lab, ' + loginPWD.val());
+	            window.location.href = 'showcase.html#section-about';
+	            jQuery('.display-name span').append(loginPWD.val().text());
+        	}, 2000);
         }
     });
     
