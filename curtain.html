@@ -1,123 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="4D Media Lab Inc.">
+    <meta name="keywords" content="3d, animation, japan">
+    <title>4D Media Lab Inc.</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
 
-<!doctype html><head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
+</head>
 
 
-<title>Test &#124; Curtain</title>
-
-<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
 
 
-<meta name="robots" content="index,follow" />
+<body>
+<div id="adressbar">
+  <div class="wrapper">
+      <h1 class="pull-left"><a href="curtain.html"><img src="images/logo2.png" alt="MyWork" class="img-responsive"></a></h1>
+      
+      <div class="pull-right">
+        <nav>
+            <ul id="top-menu">
+                <li class="active"><a href="#wrapper" class="curtain-links">Home</a></li>
+                <li><a href="#section-3D" class="curtain-links">3D</a></li>
+                <li><a href="#section-vr-and-ar" class="curtain-links">VR &amp; AR</a></li>
+                <li><a href="#section-360VR" class="curtain-links">360VR Studio</a></li>
+                <li><a href="#section-web3D" class="curtain-links">Web 3D</a></li>
+                <li><a href="#section-post-productions" class="curtain-links">Post Productions</a></li>
+                <li><a href="#section-about" class="curtain-links">Showcase</a></li>
+                <li><a href="#section-contact" class="curtain-links">About Us</li>
+            </ul>
+        </nav>
+      </div>
+  </div>
+  
+</div>
 
-<style>
-    html{
-        height: 100%;
-        overflow-x: hidden;
-        font: 16px arial, sans-serif;
-    }
 
-    .curtains{
-        width: 100%;    
-        z-index:1;
-        position:relative;
-    }
+<ol class="curtains">
+	<!-- Top -->
+    <li id="wrapper" style="height:700px;background:#c5aeaa;">
+        <img src="http://lorempixel.com/g/800/600/sports/" alt="BG">
+		<div class="contents">
+            <h1>Content 1</h1>
+		</div>
+    </li>
 
-    .curtains>li{
-        -webkit-transform:translateZ(0);
-        background: white;
-        position: fixed;
-        display:block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        min-height: 100%;
-        overflow: hidden;
-        z-index:1;
-    }
-    .curtains>li.hidden{display:none;}
-    .curtains>li:first-child{z-index:2;}    
-    
-    .pull-left {float: left; display: block;}
-    .pull-right{float:right; display: block;}
-    
-    #top-menu {list-style: none; margin: 0; padding:0;}
-    
-    #top-menu li {display: inline;}
-    
-    .wrapper {max-width: 960px; margin: 0 auto; width: 100%;}
-    
-    .wrapper h1 {margin:0;}
-    .wrapper h1 a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    .contents {
-        padding:0 10px;
-        margin: 70px auto 0;
-        max-width: 960px;
-        width: 100%;
-    }
-    
-    /* Sliding panels */
-    .curtains>li {
-        background:#FFF;
-    }
-    .curtains>li:last-child{box-shadow:none}    
-    
-    .curtains > li img {
-        background-size: 100% auto;
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        margin: auto;
-        display: block;
-    }
-    
-    #adressbar {
-        background-color: #000;
-        height: auto;
-        top: 0;
-        position: fixed;
-        z-index: 100;
-        font-size: 12px;
-        line-height: 26px;
-        color: #FFF;
-        width: 100%;
-        padding: 1em 0;
-    }
-    #adressbar p {
-        text-align: right;
-        margin-right: 30px;
-    }    
-    
-    #top-menu li a{
-        padding: 0.3em 1em;
-    }
-    
-    #top-menu a {
-        text-decoration: none;
-        color: white;
-        font-size: 0.9em;
-        background: #4e4e4e;
-        border-radius:2px;
-    }
-    
-    #top-menu li a:hover {
-        background: #333;
-    }
+	<!-- Top -->
 
-    
-    
-</style>
+    <li id="section-3D" style="height:700px;background:#d7af1b;">
+        <img src="http://lorempixel.com/g/800/600/sports/" alt="BG">
+		<div class="contents">
+            <h2>3D</h2>
+		</div>
+    </li>
 
-<!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <li id="section-vr-and-ar" style="height:700px;background:#bc9d8c;">
+        <img src="http://lorempixel.com/g/800/600/food/" alt="BG">
+		<div class="contents">
+            <h1>Content 3</h1>
+		</div>
+    </li>
+    
+    <li id="section-360VR" style="height:700px;background:#8bbb7c;">
+        <img src="http://lorempixel.com/g/800/600/abstract/" alt="BG">
+		<div class="contents">
+		    <h1>360VR 4</h1>
+		</div>
+    </li>
+
+    <li id="section-web3D" style="height:700px;background:#d2c32b;">
+        <img src="http://lorempixel.com/g/800/600/nightlife/" alt="BG">
+		<div class="contents">
+            <h1>Web 3D</h1>
+		</div>
+    </li>
+
+    <li id="section-post-productions" style="height:700px;background:#b59e5f;">
+        <img src="http://lorempixel.com/g/800/600/nature/" alt="BG">
+		<div class="contents">
+           <h1>Post Productions</h1>
+        </div>
+    </li>
+
+    <li id="section-about" style="height:700px;background:#50dcfe;">
+        <img src="http://lorempixel.com/g/800/600/sports/" alt="BG">
+		<div class="contents">
+            <h1>About</h1>
+		</div>
+    </li>
+    
+    <li id="section-contact" style="height:700px;background:#bb9a57;">
+        <img src="http://lorempixel.com/g/800/600/people/" alt="BG">
+		<div class="contents">
+            <h1>Contact</h1>
+		</div>
+    </li>
+
+
+</ol>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.migrate.min.js"></script>
 <script type="text/javascript" src="http://rentallockers.com/js/curtain.js"></script>
@@ -131,96 +121,6 @@
     });
 </script>
 
-</head>
-
-
-
-
-<body>
-<div id="adressbar">
-  <div class="wrapper">
-      <h1 class="pull-left"><a href="curtain.html">Load</a></h1>
-      
-      <div class="pull-right">
-        <nav>
-            <ul id="top-menu">
-                <li class="active"><a href="#section-1" class="curtain-links">Content-1</a></li>
-                <li><a href="#section-2" class="curtain-links">Content-2</a></li>
-                <li><a href="#section-3" class="curtain-links">Content-3</a></li>
-                <li><a href="#section-4" class="curtain-links">Content-4</a></li>
-                <li><a href="#section-5" class="curtain-links">Content-5</a></li>
-                <li><a href="#section-6" class="curtain-links">Content-6</a></li>
-                <li><a href="#section-7" class="curtain-links">Content-7</a></li>
-                <li><a href="#section-8" class="curtain-links">Content-8</a></li>
-                <li><a href="#section-9" class="curtain-links">Content-9</a></li>
-            </ul>
-        </nav>
-      </div>
-  </div>
-  
-</div>
-
-
-<ol class="curtains">
-	<!-- Top -->
-    <li id="section-1" style="height:700px;background:#c5aeaa;">
-        <img src="http://lorempixel.com/g/800/600/sports/" alt="BG">
-		<div class="contents">
-            <h1>Content 1</h1>
-		</div>
-    </li>
-
-	<!-- Top -->
-
-    <li id="section-2" style="height:700px;background:#d7af1b;">
-		<div class="contents">
-            <h2>Content 2</h2>
-		</div>
-    </li>
-
-    <li id="section-3" style="height:700px;background:#bc9d8c;">
-		<div class="contents">
-            <h1>Content 3</h1>
-		</div>
-    </li>
-    
-    <li id="section-4" style="height:700px;background:#8bbb7c;">
-		<div class="contents">
-		    <h1>Content 4</h1>
-		</div>
-    </li>
-
-    <li id="section-5" style="height:700px;background:#d2c32b;">
-		<div class="contents">
-            <h1>Content 5</h1>
-		</div>
-    </li>
-
-    <li id="section-6" style="height:700px;background:#b59e5f;">
-		<div class="contents">
-           <h1>Content 6</h1>
-        </div>
-    </li>
-
-    <li id="section-7" style="height:700px;background:#50dcfe;">
-		<div class="contents">
-            <h1>Content 7</h1>
-		</div>
-    </li>
-    
-    <li id="section-8" style="height:700px;background:#bb9a57;">
-		<div class="contents">
-            <h1>Content 8</h1>
-		</div>
-    </li>
-
-    <li id="section-9" style="height:1000px;background:#936ea2;">
-		<div class="contents">
-		</div>
-    </li>
-
-
-</ol>
 
 </body>
 </html>

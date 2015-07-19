@@ -391,9 +391,7 @@ jQuery(document).ready(function() {
         	return false;
         } else {
         	setTimeout(function(){
-	        	//alert('Welcome to 4D Media Lab, ' + loginPWD.val());
 	            window.location.href = 'showcase.html#section-about';
-	            jQuery('.display-name span').append(loginPWD.val().text());
         	}, 2000);
         }
     });
