@@ -178,9 +178,8 @@ header h1#logo a img {
 
 .logo-smaller h1#logo img {
   width: auto;
-    max-width: 168px !important;
-  height: 38px;/*30px;*/
-  line-height: 75px;
+  height: auto
+  line-height: inherit;
   font-size: 30px;
     margin-top: 16px;
 }
@@ -422,8 +421,24 @@ header.fixed h1#logo img.logo-2 {
 /* section */
 /* ================================================== */
 section {
-  padding: 90px 0 90px 0;
+    padding:0;
+    margin:0;
 }
+
+/*.curtains>li{
+    -webkit-transform:translateZ(0);
+    background: transparent !important;
+    position: inherit;
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    z-index:1;
+}
+.curtains>li.hidden{display:none;}
+.curtains>li:first-child{z-index:2;} */
 
 .dark section {
   background: #111;
@@ -2974,6 +2989,12 @@ p.intro {
 #section-post-productions .de-video-container .de-video-overlay{
     background: rgba(0,0,0,.4);    
 }    
+
+
+#above-the-fold img {
+    margin: auto;
+    display: block;
+}
 
 
 .demo-reel .blog-slide{

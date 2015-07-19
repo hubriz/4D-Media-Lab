@@ -2,19 +2,35 @@
 /* -------------------------------------------------- */
 
 #subheader{
-background:url(../images/background/bg-subheader.jpg) top left fixed;
-background-size:cover;
+    background:url(../images/background/bg-subheader.jpg) top left fixed;
+    background-size:cover;
 }
 
-#section-3D {
-    background: url(../images/background/3D_001.jpg) top left fixed;
+#above-the-fold {
+    background: url(../images/background/home-top-bg.jpg) fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0 !important;
+}
+
+
+#section-3D {
+    background: url(../images/background/3D.jpg) top left fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#section-vr-and-ar {
+    background: url(../images/background/bg-vr-and-ar.jpg) top left fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #section-360VR,
-##section-contact{
+#section-contact{
     background:#f8f8f8;
     height: 100%;
+    position: relative;
 }
 
 #section-360VR .image-container {

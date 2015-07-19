@@ -18,7 +18,7 @@ jQuery(document).ready(function() {
 	
 	jQuery('body').stellar({
         //responsive: true,
-       // scrollProperty: 'margin'
+        //scrollProperty: 'transform'
     });
 	
 // --------------------------------------------------
@@ -777,9 +777,3 @@ jQuery(document).ready(function() {
      
 	
 	});
-
-
-
-
-
-
