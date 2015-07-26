@@ -425,7 +425,7 @@ section {
     margin:0;
 }
 
-/*.curtains>li{
+.curtains>li{
     -webkit-transform:translateZ(0);
     background: transparent !important;
     position: inherit;
@@ -438,7 +438,98 @@ section {
     z-index:1;
 }
 .curtains>li.hidden{display:none;}
-.curtains>li:first-child{z-index:2;} */
+.curtains>li:first-child{z-index:2;} 
+
+
+    .curtains{
+        width: 100%;    
+        z-index:1;
+        position:relative;
+    }
+
+    .curtains>li{
+        -webkit-transform:translateZ(0);
+        background: white;
+        position: fixed;
+        display:block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        overflow: hidden;
+        z-index:1;
+    }
+    .curtains>li.hidden{display:none;}
+    .curtains>li:first-child{z-index:2;}    
+    
+    #top-menu {list-style: none; margin: 0; padding:0;}
+    
+    #top-menu li {display: inline;}
+    
+    .wrapper {max-width: 960px; margin: 0 auto; width: 100%;}
+    
+    .wrapper h1 {margin:0;}
+    .wrapper h1 a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .contents {
+        padding:0 10px;
+        margin: 240px auto 0;
+        max-width: 960px;
+        width: 100%;
+    }
+    
+    /* Sliding panels */
+    .curtains>li {
+        background:#FFF;
+    }
+    .curtains>li:last-child{box-shadow:none}    
+    
+    .curtains > li img {
+        background-size: 100% auto;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+    
+    #adressbar {
+        background-color: #000;
+        height: auto;
+        top: 0;
+        position: fixed;
+        z-index: 100;
+        font-size: 12px;
+        line-height: 26px;
+        color: #FFF;
+        width: 100%;
+        padding: 1em 0;
+    }
+    #adressbar p {
+        text-align: right;
+        margin-right: 30px;
+    }    
+    
+    #top-menu li a{
+        padding: 0.3em 1em;
+    }
+    
+    #top-menu a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.9em;
+        background: #4e4e4e;
+        border-radius:2px;
+    }
+    
+    #top-menu li a:hover {
+        background: #333;
+    }
+
+
 
 .dark section {
   background: #111;
@@ -3476,3 +3567,7 @@ p.intro {
     max-width: 300px;
   }
 }
+    
+    
+    
+/*Curtain Effect*/
