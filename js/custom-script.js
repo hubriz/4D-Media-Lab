@@ -19,6 +19,7 @@ jQuery(document).ready(function() {
 	jQuery('body').stellar({
         //responsive: true,
         //scrollProperty: 'transform'
+        horizontalScrolling:false
     });
 	
 // --------------------------------------------------
@@ -516,6 +517,11 @@ jQuery(document).ready(function() {
 		controlNav: false,
 		slideshow: false
 	  });
+
+		jQuery('#section-about .flexslider').flexslider({
+			controlNav: false,
+			directionNav : false
+		}); 
 	});
 	
 
