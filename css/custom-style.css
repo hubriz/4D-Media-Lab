@@ -7,23 +7,57 @@
 }
 
 #above-the-fold {
-    background: url(../images/background/home-top-bg.jpg) fixed;
+    background: url(../images/background/bg-1.jpg) fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 0 !important;
 }
 
 
-#section-3D {
+/* #section-3D {
     background: url(../images/background/3D.jpg) top left fixed;
     background-size: cover;
     background-repeat: no-repeat;
+} */
+
+#section-3D .de-video-overlay {
+    background: transparent;
+}
+
+#section-3D .inner-padding,
+#section-vr-and-ar .inner-padding,
+#section-post-productions .inner-padding {
+    position: relative;
+}
+
+#section-3D .inner-padding img {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
 }
 
 #section-vr-and-ar {
-    background: url(../images/background/bg-vr-and-ar.jpg) top left fixed;
+    background: url(../images/background/bg-3.jpg) fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#section-vr-and-ar .inner-padding img{
+    margin: -50px auto 0;
+    display: 50% 10%;
+}
+,
+#section-post-productions .inner-padding img {
+    position: relative;
+    margin: 60% 10% 0 10%;
+}
+#section-post-productions{
+    background: url(../images/background/bg-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom !important;
 }
 
 #section-360VR,
@@ -60,6 +94,11 @@
 
 #section-contact .image-container{
     background: url(../images/background/officeImage.jpg);
+}
+
+#section-about .flexslider ul.slides {
+    overflow: hidden;
+    margin-top: 20px;
 }
 
 #fun-facts{

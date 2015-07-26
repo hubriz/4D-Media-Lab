@@ -67,7 +67,7 @@
 
             if(this.options.mobile){
                this.scrollEl =  this.$element;
-            } else if($.mozilla || $.msie) {
+            } else if($.browser.mozilla || $.browser.msie) {
                 this.scrollEl = $('html');
             } else {
                 this.scrollEl = $('body');
