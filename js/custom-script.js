@@ -385,16 +385,18 @@ jQuery(document).ready(function() {
     var loginPWD = jQuery("[name='inputEmail']");
     var loginPass = jQuery("[name='inputPassword']");
     var submitThis = jQuery("[name='btn-showcase']");
+
+    loginPass.hide();
     
     submitThis.on('click', function(){
-        if ( loginPass.val() !== "4D-MediaLab") {
-        	confirm('Please try again.. Password incorrect.');
-        	return false;
-        } else {
+        // if ( loginPass.val() !== "4D-MediaLab") {
+        // 	confirm('Please try again.. Password incorrect.');
+        // 	return false;
+        // } else {
         	setTimeout(function(){
 	            window.location.href = 'showcase.html#section-about';
         	}, 2000);
-        }
+       //}
     });
     
     
@@ -520,8 +522,8 @@ jQuery(document).ready(function() {
 
 		jQuery('#section-about .flexslider').flexslider({
 			controlNav: false,
-			directionNav : false
-		}); 
+		})
+
 	});
 	
 
