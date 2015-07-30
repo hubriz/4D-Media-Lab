@@ -152,17 +152,15 @@ header.smaller #mainmenu a {
 
 header.smaller {
   height: 70px;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,1);
   border-bottom: solid 1px #ddd;
 }
-header:hover {
-    background: transparent
-}
 
-header.smaller.clone:hover {
+
+/* header.smaller.clone:hover {
     background: rgba(255,255,255,1);
 }
-
+ */
 header h1#logo a img {
     max-width: 168px;
     height: auto;
@@ -927,12 +925,13 @@ address {
 }
 
 address span {
-  display: block;
-  font-size: 16px;
-  border-bottom: solid 1px #bbb;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  font-weight: 300;
+	display: block;
+	font-size: 16px;
+	border-bottom: solid 1px #bbb;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	font-weight: 300;
+	line-height: 1.2;
 }
 
 .dark address span {
@@ -3117,8 +3116,8 @@ p.intro {
         margin-top: 0;
     }
     .inner-padding h2 {
-        text-align: center;
-        display: block;
+	text-align: center;
+	display: block;
     }
 }
 
@@ -3568,4 +3567,4 @@ p.intro {
   }
 }
     
-    
+

@@ -14,11 +14,11 @@
 }
 
 
-/* #section-3D {
+#section-3D {
     background: url(../images/background/3D.jpg) top left fixed;
     background-size: cover;
     background-repeat: no-repeat;
-} */
+}
 
 #section-3D .de-video-overlay {
     background: transparent;
@@ -44,12 +44,12 @@
     z-index: 1000;
 }
 
-/* #section-vr-and-ar {
+#section-vr-and-ar {
     background: url(../images/background/bg-3.jpg) fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-} */
+}
 
 #section-vr-and-ar .inner-padding img{
     margin: -50px auto 0;
@@ -71,8 +71,8 @@
 
 /* #section-360VR .image-container {
     background:url(../images/background/360VR-STUDIO-001.jpg);
-} */
-
+}
+ */
 #section-web3D {
     background: #inherit;
     height: 100%;
@@ -110,6 +110,21 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background: #585858;
+}
+
+  
+#section-about form.form-signin .alert.alert-success h2 {
+  color: #3C763D;
+  margin: 0;
+}
+
+#section-about form.form-signin .alert.alert-danger h2 {
+  color:#A94442 !important;
+  margin:0 !important;
+}
+
+#section-about .email-notifier {
+    display: none;
 }
 
 .space-this {

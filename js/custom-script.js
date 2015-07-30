@@ -382,22 +382,67 @@ jQuery(document).ready(function() {
 
     // page login
 
-    var loginPWD = jQuery("[name='inputEmail']");
+    /*var loginPWD = jQuery("[name='inputEmail']");
     var loginPass = jQuery("[name='inputPassword']");
     var submitThis = jQuery("[name='btn-showcase']");
 
     loginPass.hide();
     
     submitThis.on('click', function(){
-        // if ( loginPass.val() !== "4D-MediaLab") {
-        // 	confirm('Please try again.. Password incorrect.');
-        // 	return false;
-        // } else {
+        if ( loginPass.val() !== "4D-MediaLab") {
+        	confirm('Please try again.. Password incorrect.');
+        	return false;
+        } else {
         	setTimeout(function(){
 	            window.location.href = 'showcase.html#section-about';
         	}, 2000);
-       //}
-    });
+       }
+    });*/
+
+	jQuery(function(){
+		var component = {
+		    input   : jQuery('input[name="inputEmail"]'),
+		    message : {	
+		        fields  : jQuery('.email-notifier'),
+		        success : jQuery('.alert-success'),
+		        error   : jQuery('.alert-danger')
+		    },
+		    button : jQuery('[name="btn-showcase"]')
+		}, 
+		errorCloser = jQuery('[name="close-error"]'),
+		errorSuccess = jQuery('[name="close-success"]'),
+		regex  = /^[a-z][a-zA-Z0-9_]*(\.[a-zA-Z][a-zA-Z0-9_]*)?@[a-z][a-zA-Z-0-9]*\.[a-z]+(\.[a-z]+)?$/;
+
+		component.button.on('click', function () {
+		    component.message.fields.hide();
+		    regex.test(component.input.val()) ? component.message.success.show() && loadIt(): component.message.error.show();
+		});
+
+		function loadIt(){
+			var user = jQuery('[name="inputEmail"]');
+			var welcome = 'Welcome ' + user.val();
+			var insert = jQuery('.form-signin .alert-success h2');
+
+			insert.text(welcome);
+
+			user.val(' ')
+
+			window.setTimeout(function(){
+				window.location.href="showcase.html#section-about"
+			}, 3000);
+		}
+
+		errorCloser.click(function(){
+			jQuery(this).parent().hide();
+			component.input.val(' ');
+		});
+		errorSuccess.click(function(){
+			jQuery(this).parent().hide();
+		});
+
+	});
+
+
     
     
     
@@ -522,6 +567,7 @@ jQuery(document).ready(function() {
 
 		jQuery('#section-about .flexslider').flexslider({
 			controlNav: false,
+			slideshowSpeed : 3000
 		})
 
 	});
